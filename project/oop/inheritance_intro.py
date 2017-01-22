@@ -7,7 +7,7 @@ class Decimal:
         return "%.{}f".format(self.places) % self.number
 
 
-class Currency(Decimal):
+class Curr(Decimal):
     # inherited from Decimal. Has all its props and methods
 
     def __init__(self, symbol, number, places):
